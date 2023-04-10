@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*======Header========*/
+header{
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 00;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+}
+
+header .company{
+    color: green;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .Navigation{
+    position: relative;
+}
+
+header a {
+    position: relative;
+    color: rgb(249, 252, 249);
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+header a::before{
+    content: '';
+    position: absolute;
+    background-color: rgb(245, 241, 241);
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header a:hover:before{
+    width: 100%;
+}
+
+/*======Section 1 Content========*/
+section{
+    padding: 100px 200px;
+} 
+
+/*.about video{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} =*/
+
+.about img{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-1{
+    z-index: 888;
+    color: rgb(255, 252, 252);
+    width: 70%;
+    margin-top: 50px;
+}
+
+.about-1 h1{
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+    padding: 5px 500px 0px 0px;
+}
+
+.about-1 h1 span{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.about-1 p{
+    margin-bottom: 65px;
+}
+
+.about-1 a{
+    background: #fff;
+    padding: 15px 35px;
+    color: rgb(29, 105, 36);
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 40px;
+}
+
+/*======Section 2 Conozca a Nuestro ========*/
+ 
+.Info img{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Info{
+    position: relative;
+    padding: 100px 100px;
+    transition: 0.3s ease;
+    padding: 30px;
+}
+
+.about-2 h1{
+    font-size: 3em;
+    text-align: left;
+    color: rgb(24, 15, 15);
+    font-weight: bold;
+    padding: 5px 100px 0px 0px;
+}
+
+.about-2 p{
+   padding: 5px;
+}
+
+.about-2 .about-item p{
+    padding: 5px 500px 0px 0px;
+}
+
+/*======Section 2  Conozca a Nuestro Box Style ========*/
+
+
+.about-item{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 80px, 30px;
+    box-shadow: 0 0 9px rgba(0,0,0 .6);
+}
+
+/*======Section 2 Team members ========*/
+
+.team{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    
+}
+
+.team .team-member{
+    border-radius: 30px;
+    background: #81ca72;
+    margin: 20px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    position: relative;
+}
+
+.team .team-member h3{
+    color: #11180b;
+    font-size: 26px;
+    margin-top: 50px;
+}
+
+.team .team-member p.role{
+    color: #fffafa;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 12px 0;
+}
+/*= Images=*/
+.team .team-member .team-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top:-50px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #fff;
+}
+
+.team .team-member .team-img img{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+
+/*======Section 3 Mission, Vision etc;========*/
+
+
+.MV{
+    display: flex;
+    text-align: center;
+    width: center;
+    justify-content: center;
+}
+
+.MV .M-V{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+}
+
+
+.MV .M-V h3{
+    color: #11180b;
+    font-size: 26px;
+    padding: 248px 0px 0px 0px;
+}
+
+.MV .M-V p{
+    color: white;
+    position: relative;
+    padding: 0px 0px 248px 0px;
+}
+
+
+.MV .M-V .MV-Info{
+    border-radius: 30px;
+    background: #81ca72;
+    margin: 40px;
+    margin-bottom: 80px;
+    width: 350px;
+    height: 550px;
+    padding: 90px;
+    line-height: 20px;
+    position: relative;
+}
+
+/*= Images=*/
+
+.MV .M-V .MV-pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    padding: 110px 0px 0px 0px;
+    background-color: #8b5e5e;
+}
+
+.MV .M-V img{
+    width: 120px;
+    height: 100px;
+    padding: 10px 0px 0px 30px;
+}
